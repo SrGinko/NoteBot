@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>NotBot</title>
     <link rel="stylesheet" href="./CSS/global.css">
 </head>
+
 <body>
     <div id="titleBar">
         <div id="title">
@@ -19,20 +21,62 @@
     </div>
     <div id="content">
         <div id="menuEsquerda">
-            
+            <div class="navMenu">
+                <div id="user">
+                    <div class="usuario">
+                        <div class="userIcon">
+                            <img id="imgUsuario" src="../Images/usuario.png" alt="" width="64px" height="64px"
+                                style="border-radius: 50%;">
+                        </div>
+                        <div id="userName">
+                            <b>Username</b>
+                        </div>
+                    </div>
+                    <div class="xpConteiner">
+                        <div style="width:100%; display: flex; flex-direction: row;"><span id="nivel">Nível: </span></div>
+                        <div style="width:100%; display: flex; flex-direction: row;">XP: <div id="xpBar"><div class="xpContent"></div></div></div>
+                    </div>
+                </div>
+                <div class="navMenuItem">
+                    <img src="../Images/icos/home.png" alt="home">
+                    <div class="navMenuText"><b>Home</b></div>
+                </div>
+                <div class="navMenuItem">
+                    <img src="../Images/icos/lista.png" alt="lista ">
+                    <div class="navMenuText"><b>Lista de Afazeres</b></div>
+                </div>
+            </div>
         </div>
         <div id="conteudo">
-            <div id="banner">
-                <h3>Banner</h3>
-            </div>
+            <div id="banner"></div>
             <div id="lista">
-
-            </div>  
+                <div id="titleList">
+                    <b>Lista de Afazeres: </b>
+                </div>
+                <div class="listaConteiner">
+                    <div class="toDoList">
+                        <b>Lista 1</b>
+                        <div class="btnConteiner">
+                            <button class="btn feito">Feito</button>
+                            <button class="btn excluir">Excluir</button>
+                        </div>
+                    </div>
+                    <div class="toDoList">
+                        <b>Lista 2</b>
+                        <div class="btnConteiner">
+                            <button class="btn feito">Feito</button>
+                            <button class="btn excluir">Excluir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="menuDireita">
 
         </div>
     </div>
+    <script src="./JS/index.js"></script>
     <script src="./JS/titleButtons.js"></script>
 </body>
+
 </html>
