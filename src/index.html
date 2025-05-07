@@ -33,17 +33,25 @@
                         </div>
                     </div>
                     <div class="xpConteiner">
-                        <div style="width:100%; display: flex; flex-direction: row;"><span id="nivel">Nível: </span></div>
-                        <div style="width:100%; display: flex; flex-direction: row;">XP: <div id="xpBar"><div class="xpContent"></div></div></div>
+                        <div style="width:100%; display: flex; flex-direction: row;"><span id="nivel">Nível: </span>
+                        </div>
+                        <div style="width:100%; display: flex; flex-direction: row;">XP: <div id="xpBar">
+                                <div class="xpContent"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="navMenuItem">
-                    <img src="../Images/icos/home.png" alt="home">
-                    <div class="navMenuText"><b>Home</b></div>
+                <div class="navMenuItem" id="configuracao">
+                    <img src="../Images/icos/configuracao.png" alt="home">
+                    <div class="navMenuText"><b>Configuração</b></div>
                 </div>
                 <div class="navMenuItem">
                     <img src="../Images/icos/lista.png" alt="lista ">
                     <div class="navMenuText"><b>Lista de Afazeres</b></div>
+                </div>
+                <div class="navMenuItem"  id="addTarefa">
+                    <img src="../Images/icos/adicionar.png" alt="lista" >
+                    <div class="navMenuText" id="addTarefa">Adicionar Tarefa</b></div>
                 </div>
             </div>
         </div>
@@ -73,6 +81,30 @@
         </div>
         <div id="menuDireita">
 
+        </div>
+        <div id="fundoModal"style="display: none;">
+             <div class="modalAddTarefa" style="display: none;">
+                <div id="menuModal"><span><b>Adicionar Tarefa</b></span><div alt="Fechar Modal" class="btnModalClose titleBtn" id="addTarefa"></div></div>
+                <div class="menuAddTarefa">
+                    <form id="formAddTarefa" action="" method="post">
+                        <label for="tarefa">Tarefa:</label><br>
+                        <input type="text" id="tarefa" name="tarefa"><br>
+
+                        <label for="descricaoTarefa">Descrição:</label><br>
+                        <textarea name="descricao" id="descricaoTarefa" placeholder="Descreva aqui:"></textarea><br>
+                        
+                        <label for="dataTarefa">Data:</label><br>
+                        <input type="date" id="data" name="data"><br>
+                        <input type="submit" value="Adicionar Tarefa">
+                    </form>
+                </div>
+            </div>
+            <div class="modalConfiguracao" style="display: none;">
+                <div id="menuModal"><span><b>Configuração</b></span><div alt="Fechar Modal" class="btnModalClose titleBtn" id="teste"></div></div>
+                <div class="menuConfiguracao">
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="./JS/index.js"></script>
